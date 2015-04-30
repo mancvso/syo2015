@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>SyO 2015</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+	<style type="text/css">
+		.slide small {
+			color: #666;
+			font-size: 0.5em;
+		}
+		.mute {
+			color: #666;
+			font-size: 0.8em;
+		}
+		/* 
+			Picture frame
+		*/
+		.full .slide:target .swing {
+		  -webkit-animation: swing ease-in-out 2s infinite;
+		  -webkit-transform-origin: 0 -55%;
+		  animation: swing ease-in-out 2s infinite;
+		  transform-origin: 0 -55%;
+		}
+
+		@-webkit-keyframes swing {
+		  0%   {-webkit-transform: rotate(-3deg) translate(-50%, -50%); }
+		  50%  {-webkit-transform: rotate(3deg) translate(-50%, -50%); }
+		  100% {-webkit-transform: rotate(-3deg) translate(-50%, -50%); }
+		}
+
+		@keyframes swing {
+		  0%   { transform: rotate(-3deg) translate(-50%, -50%); }
+		  50%  { transform: rotate(3deg) translate(-50%, -50%); }
+		  100% { transform: rotate(-3deg) translate(-50%, -50%); }
+		}
+		.frame {
+			display:block;
+		}
+		.shadow {
+			 box-shadow: 5px 10px 10px rgba(0,0,0,.35);
+		}
+		.frame img {
+		  border: 5px solid #f8f8f8; z-index: 2; display: block;
+		}
+	    
+		.frame::after {
+		  content: '';
+		  display: block;
+		  position: absolute;
+		  top: -10px;
+		  left: 50%;
+		  margin-left: -10px;
+		  width: 20px;
+		  height: 20px;
+		  -webkit-transform: rotate(45deg);
+		  -moz-transform: rotate(45deg );
+		  -ms-transform: rotate(45deg );
+		  -o-transform: rotate(45deg );
+		  transform: rotate(45deg);
+		  border-style: solid;
+		  border-color: #666;
+		  border-width: 1px 0 0 1px;
+		}
+		.frame::before {
+		  content: '';
+		  display: block;
+		  width: 5px;
+		  height: 5px;
+		  background-image: 
+		    -webkit-linear-gradient(top, #f1f1f1 0%, #333 80%, #000 95%);
+		  background-image:
+		    -moz-linear-gradient(to bottom, #f1f1f1 0%, #333 80%, #000 95%);
+		  background-image: 
+		    linear-gradient(to bottom, #f1f1f1 0%, #333 80%, #000 95%);
+		  border-radius: 50%;
+		  border: 1px solid #666;
+		  position: absolute;
+		  top: -15px;
+		  left: 50%;
+		  margin-left: -3px;
+		}
+		/* Middle */
+		.middle {
+			position:absolute;
+			top:50%;
+			left:50%;
+			-webkit-transform:translate(-50%, -50%);
+			transform:translate(-50%, -50%);
+		}
+
+		/* Top-right */
+		.top-right {
+			position:absolute;
+			top:50%;
+			left:70%;
+			-webkit-transform:translate(-50%, -50%);
+			transform:translate(-50%, -50%);
+		}
+		@keyframes coveranimation {
+			from { -webkit-transform: rotate(-90deg); transform: rotate(-90deg);}
+			to { -webkit-transform: rotate(60deg); transform: rotate(60deg); }
+		}
+		body.full #Cover img {
+			-webkit-animation: coveranimation 80s alternate; /* Chrome, Safari, Opera */
+			animation: coveranimation 80s alternate;
+		}
+		#Cover h2 {
+			margin:30px 0 0;
+			color:#FFF;
+			text-align:center;
+			font-size:3.5em;
+			text-shadow: 0px 0px 3px rgba(238, 233, 238, 0.8);
+		}
+		#Cover p {
+			margin:10px 0 0;
+			text-align:center;
+			color:#FFF;
+			font-style:italic;
+			font-size:20px;
+			}
+		#Cover p a {
+			color:#FFF;
+		}
+		p.stretch {
+			width: 45%;
+		}
+		#outline {
+			padding: 0px;
+			width: 90%;
+			font-size: 1em;
+		}
+		.full #outline { display: none;}
+		#outline p {
+			text-align: justify;
+			font-size: 1em;
+			margin-left: auto;
+			margin-right: 5%;
+		}
+		#outline ul, #outline ol {
+			list-style: square;
+			text-align: left;
+		}
+
+	</style>
+</head>
+<body class="list">
+	<!-- El texto que se lee antes de las dipositivas -->
+	<header class="caption">
+		<h1>Jean-François Lyotard</h1>
+		<small>(por Alejandro Vidal <a href="mailto:brian.vidal@alumnos.usm.cl">brian.vidal@alumnos.usm.cl</a>)</small>
+	
+		<div id="outline">
+		<p>Lyotard estudió filosofía en la Sorbona. Uno de sus docentes fue Maurice de Gandillac. Fue miembro del grupo 'Socialisme ou Barbarie' (Socialismo o barbarie), un grupo de la izquierda crítica conformado por intelectuales, como Castoriadis y Lefort, iniciado en 1956 durante las revueltas en Hungría en oposición al estalinismo del comunismo soviético.</p>
+
+		<p>Este autor criticó la sociedad actual postmoderna por el realismo del dinero, que se acomoda a todas las tendencias y necesidades, siempre y cuando tengan poder de compra. Criticó los metadiscursos: el cristiano, el ilustrado, el marxista y el capitalista. Según Lyotard, estos son incapaces de conducir a la liberación.</p>
+		<p>La cultura postmoderna se caracteriza por la incredulidad con respecto a los metarrelatos, invalidados por sus efectos prácticos y actualmente no se trata de proponer un sistema alternativo al vigente, sino de actuar en espacios muy diversos para producir cambios concretos. El criterio actual de operatividad es tecnológico y no el juicio sobre lo verdadero y lo justo. Defendía la pluralidad cultural y la riqueza de la diversidad.</p>
+
+		<p>&nbsp;</p>
+		<h2>Obras</h2>
+		<ol>
+			<li><i>Economía libidinal</i> (<i>Économie libidinale</i>, 1974)
+			</li>
+				<p class="mute">En esta obra discute a Sigmund Freud, Karl Marx y el capitalismo, donde presenta el trabajo de Gilles Deleuze, Félix Guattari y Jean Baudrillard como críticas "hermanas". Afirma que sus teorías están sincronizadas y copolarizadas con las de Baudrillard, aunque él le reproche creer aún en una verdad que problablemente ha sido olvidada o reprimida por el Marxismo.</p>
+				<p class="mute">Según el autor, cada economía política es libidinal; la intensidad no posee equivalente en la moneda; no se eliminan los circuitos del capital de la inversíon libidinal. Intercambios intensos ignoran la negación contitutiva tanto de la economía política y la teología natural, ya que la líbido invierte incondicionalmente.</p>
+				<p class="mute">Se centra en los eventos del Mayo francés, una cadena de protestas que se llevaron a cabo en Francia y, especialmente, en París durante los meses de mayo y junio de 1968. Esta serie de protestas fue iniciada por grupos estudiantiles de izquierda contrarios a la sociedad de consumo, a los que posteriormente se unieron grupos de obreros industriales, los sindicatos y el Partido Comunista Francés.</p>
+
+			<li><i>La condición postmoderna: Informe sobre el saber</i> (<i>La Condition postmoderne: Rapport sur le savoir</i> 1979)</li>
+
+			<li><i>Au juste: Conversations</i> (1979)</li>
+
+			<li><i>La diferencia</i>, traducción publicada en 1999 (<i>Le Différend</i>, 1983)
+			</li>
+				<p class="mute">En esta obra, al autor busca convencer al lector de que el pensamiento, el conocimiento, la ética, la política, la historia, el ser, según el caso, están en juego en la coordinación de una proposición con otra proposición. Refutar el prejuicio, anclado en el lector por siglos de humanismo y de “ciencias humanas”, de que existe el “hombre”, de que existe el “lenguaje”, de que aquél se sirve de éste para sus fines, de que si aquél no logra alcanzarlos ello se debe a la falta de un buen control sobre el lenguaje mediante un lenguaje “mejor”. Defender e ilustrar la filosofía en su desacuerdo con sus dos adversarios: en el exterior, el género del discurso económico (el intercambio, el capital), y en el interior de sí misma el género del discurso académico (el magistorio).</p>
+				<p class="mute">Al mostrar que la coordinación de una proposición con otra proposición es problemática y que ese problema es la política, erigir la política filosófica apartada de la política de los “intelectuales” y de los políticos. Dar testimonio de la diferencia.</p>
+			<li><i>La confesión de Agustín</i>,obra póstuma e incompleta</li>
+			<li>"Lo Inhumano" (Charlas sobre el tiempo 2008)</li>
+		</ol>
+	</div>
+	</header>
+	<hr>
+<!-- /Slide -->
+	<section class="slide cover"><div>
+		<p class="note">Ready</p>
+	</div></section>
+	<section class="slide cover" id="Cover"><div>
+
+		<h2>Jean-François Lyotard</h2>
+		<p>La condición post-moderna y el fin de los metarrelatos</p>
+		<img src="pictures/cover_min.jpg" alt="">
+		<br>
+		<br>
+		<br>
+		<p>
+			<span class="mute">Alejandro Vidal</span> / <span class="mute">Ingeniería Ejecución Informática</span> / <span class="mute">2973063-6</span>
+		</p>
+	</div></section>
+<!-- /Slide -->
+	
+<!-- Slide -->
+	<section class="slide"><div>
+		<h2>Itinerario</h2>
+		<ol>
+			<li>Biografia</li>
+			<li class="next">Modernismo</li>
+			<li class="next">Post-modernismo</li>
+			<li class="next">Organizacion post-moderna</li>
+			<li class="next">Post-postmodernismo</li>
+		</ol>
+		<!-- <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p> -->
+	</div></section>
+
+<!-- Slide -->
+
+	<section class="slide" id="bio"><div>
+		<h2>Jean-François Lyotard<br>
+		<small>(Versalles, 1924 - París, 1998)</small></h2>
+		<figure class="top-right shadow swing frame">
+			<img src="pictures/him_landscape_crop.jpg">
+      	</figure>
+		<p class="stretch">Filósofo y sociólogo francés. Reconocido por su introducción al estudio post-moderno a finales de 1970.</p>
+		<p>Fue profesor en la Universidad de París VIII, co-fundador del Colegio Internacional de Filosofía y profesor emérito de la Universidad de París.</p>
+	</div></section>
+
+<!-- Slide -->
+
+	<section class="slide"><div>
+		<h2>Principales obras literarias</h2>
+		<ol>
+			<li><i>Economía libidinal</i> (<i>Économie libidinale</i>, 1974)</li>
+				<ul>
+					<li>Toda economía política es libidinal</li>
+					<li>La líbido invierte incondicionalmente; niega la economía política.</li>
+				</ul>
+			<li><i>La condición postmoderna: Informe sobre el saber</i>, 1979</li>
+			<li><i>La diferencia</i>, traducción publicada en 1999 (<i>Le Différend</i>, 1983)</li>
+				<ul>
+					<li>Refutar el prejuicio de la existencia del hombre y su lenguaje</li>
+					<li>Erigir una política filosófica opuesta a la "intelectual"</li>
+				</ul>
+		</ol>
+		<p class="note mute">Libido (del lat. libido: «deseo», «pulsión» y en un sentido estricto: «lascivia»</p>
+	</div></section>
+
+<!-- Slide -->
+<!--
+	<section class="slide"><div>
+		<h2>Serious Citations</h2>
+		<figure>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+			</blockquote>
+			<figcaption>Marcus Tullius Cicero</figcaption>
+		</figure>
+	</div></section>
+-->
+	<!--
+	<section class="slide"><div>
+		<h2>Even Tables</h2>
+		<table>
+		<tr>
+			<th scope="col">Locavore</th>
+			<th>Umami</th>
+			<th>Helvetica</th>
+			<th>Vegan</th>
+		</tr>
+		<tr>
+			<th scope="row">Fingerstache</th>
+			<td>Kale</td>
+			<td>Chips</td>
+			<td>Keytar</td>
+		</tr>
+		<tr>
+			<th scope="row">Sriracha</th>
+			<td>Gluten-free</td>
+			<td>Ennui</td>
+			<td>Keffiyeh</td>
+		</tr>
+		<tr>
+			<th scope="row">Thundercats</th>
+			<td>Jean</td>
+			<td>Shorts</td>
+			<td>Biodiesel</td>
+		</tr>
+		<tr>
+			<th scope="row">Terry</th>
+			<td>Richardson</td>
+			<td>Swag</td>
+			<td>Blog</td>
+		</tr>
+		</table>
+		<p>It’s good to have information organized.</p>
+	</div></section> -->
+
+<!-- slide -->
+
+	<section class="slide shout" id="modernism"><div>
+		<h2>Modernismo</h2>
+		<style>
+			#modernism {
+				background-color: #000;
+				background-image: url("pictures/cover_modernism.jpg");
+				background-size: cover;
+				background-position: 50% 50%;
+			}
+			#modernism h2 {
+				size: 5em;
+				color:#FFF;
+				text-shadow: 0px 0px 3px rgba(38, 33, 38, 0.8);
+			}
+		</style>
+	</div></section>
+
+<!-- slide -->
+
+	<section class="slide"><div>
+		<h2>Modernismo</h2>
+		<p>Los rasgos característicos del Modernismo se ven tanto en los temas como en el estilo. En general, desea la armonía, la plenitud y la perfección de un mundo que quieren idealizar y del cual huyen.</p>
+		<ol>
+			<li>Teológico: La iglesia como instituciones humanas necesitadas de reformación</li>
+			<li class="next">Artístico: Experimentación en oposición a lo académico</li>
+			<li class="next">Literario: Reflejo externo del mundo interior, oposición al Realismo.</li>
+		</ol>
+	</div></section>
+
+<!-- slide -->
+
+
+	<section class="slide shout" id="post-modernism"><div>
+		<h2>Post-modernismo</h2>
+		<style>
+			#post-modernism {
+				background-color: #000;
+				background-image: url("pictures/cover_post-modernism_v2.jpg");
+				background-size: cover;
+				background-position: 50% 50%;
+			}
+			#post-modernism h2 {
+				margin-top: 20%;
+				size: 5em;
+				color:#FFF;
+				text-shadow: 0px 0px 3px rgba(38, 33, 38, 0.8);
+			}
+		</style>
+	</div></section>
+
+	<section class="slide shout" id="post-postmodernism"><div>
+		<style>
+			#post-postmodernism {
+				background-color: #000;
+				background-image: url("pictures/cover_post-postmodernism.jpg");
+				background-size: cover;
+				background-position: 50% 50%;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Post post-modernismo</h2>
+		<p>Rechazo hacia el Postmodernism bajo el argumento de que las visiones y temáticas de esa era surgen de una mentalidad victimal, la cual tiende a inducir un escepticismo agnóstico sobre el pensar de las cosas.</p>
+	</div></section>
+	<section class="slide shout" id="SeeMore"><div>
+		<h2><img src="pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower">See more on GitHub</a></h2>
+		<style>
+			#Picture h2 {
+				color:#FFF;
+				}
+			#SeeMore h2 {
+				font-size:100px
+				}
+			#SeeMore img {
+				width:0.72em;
+				height:0.72em;
+				}
+		</style>
+	</div></section>
+	<p class="badge"><a href="https://github.com/mancvso/syo2015">Disponible en Github</a></p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
