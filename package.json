@@ -1,0 +1,22 @@
+{
+  "name": "syo2015",
+  "version": "0.5.0",
+  "description": "Presentación de Jean-François Lyotard",
+  "main": "index.node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mancvso/syo2015.git"
+  },
+  "author": "Alejandro Vidal",
+  "license": "UNLICENSE",
+  "bugs": {
+    "url": "https://github.com/mancvso/syo2015/issues"
+  },
+  "homepage": "https://github.com/mancvso/syo2015#readme",
+  "dependencies": {
+    "socket.io": "^1.3.5"
+  }
+}
