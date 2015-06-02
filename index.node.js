@@ -1,21 +1,17 @@
-var app = require('http').createServer(handler)
-var io = require('socket.io')(app);
-var fs = require('fs');
+var express = require('express');
 
-app.listen(80);
+var app = express();
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
 
-function handler (req, res) {
-  fs.readFile(__dirname + '/index.html',
-  function (err, data) {
-    if (err) {
-      res.writeHead(500);
-      return res.end('Error loading index.html');
-    }
+server.listen(process.env.PORT || 80);
 
-    res.writeHead(200);
-    res.end(data);
-  });
-}
+app.use('/shower', express.static('./shower'));
+app.use('/pictures', express.static('./pictures'));
+
+app.get('/', function(req, res){
+  res.sendFile(__dirname + '/index.html');
+});
 
 io.on('connection', function (socket) {
   socket.emit('news', { hello: 'world' });

@@ -4,7 +4,8 @@
   "description": "Presentación de Jean-François Lyotard",
   "main": "index.node.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.node.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/mancvso/syo2015#readme",
   "dependencies": {
+    "express": "^4.12.4",
     "socket.io": "^1.3.5"
   }
 }
